@@ -6,7 +6,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ASP_RazorContoso.Models
 {
-    {
         public enum Grades
         {
             A, B, C, D, F
@@ -28,5 +27,5 @@ namespace ASP_RazorContoso.Models
 
             public virtual Student Student { get; set; }
         }
-    }
 }
+

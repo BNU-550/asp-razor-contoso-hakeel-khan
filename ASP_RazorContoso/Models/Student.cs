@@ -15,5 +15,4 @@ namespace ASP_RazorContoso.Models
             //Relationships or navigation properties
             public virtual ICollection<Enrollment> Enrollments { get; set; }
         }
-    }
 }
