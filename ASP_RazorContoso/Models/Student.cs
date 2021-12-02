@@ -17,9 +17,8 @@ namespace ASP_RazorContoso.Models
             [DisplayName("First Name"), Required, StringLength(20)]
             public string FirstName { get; set; }
 
-            [DisplayName("Enrol Date"), DataType(DataType.Date)]
-            [DisplayFormat(DataFormatString ="YYYY/MM/DD")]
-            public DateTime EnrollmentDate { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime EnrollmentDate { get; set; }
 
             //Relationships or navigation properties
             public virtual ICollection<Enrollment> Enrollments { get; set; }
